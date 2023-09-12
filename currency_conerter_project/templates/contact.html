@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="static/styles.css">
+    <link rel="icon"  href = "/static/icon31.png" type="image/png" style="border-radius: 50px;" >
+    <title>Contact</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="history.html">History</a></li>
+        </ul>
+        <script>
+            function toggleMenu() {
+        const menu = document.querySelector('.menu');
+        menu.classList.toggle('active');
+    }
+    </script>
+    </div>
+    <h1>Contact</h1>
+    <p style="text-align: center;">You can contact me on my <a href="mailto:ftmmhmdysnbsmar@gmail.com">E-mail adress</a>.</p>
+</body>
+</html>

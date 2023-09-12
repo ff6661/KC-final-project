@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="static/styles.css">
+    <link rel="icon"  href = "/static/icon31.png" type="image/png" style="border-radius: 50px;" >
+    <title>About</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="history.html">History</a></li>
+        </ul>
+    </div>
+    <script>
+        function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+}
+</script>
+    <h1>About the project</h1>
+    <p style="font-style: normal;">This is a currency converting site programmed and designed<br> by kuwait codes student Fatima Mohammad Yaseen Bismar. <br> 
+    Python was used for the backend and HTML, CSS and javaScript were used for the frontend. <br>
+This site is linked to <a target="_blank" href="https://openexchangerates.org/">Open Exchange Rate</a> to keep the data updated.</p>
+</body>
+</html>

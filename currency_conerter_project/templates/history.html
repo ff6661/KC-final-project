@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="static/styles.css">
+    <link rel="icon"  href = "/static/icon31.png" type="image/png" style="border-radius: 50px;" >
+    <title>conversion history</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="history.html">History</a></li>
+        </ul>
+    </div>
+    <script>
+        function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+}
+</script>
+    <h1>Conversion History</h1>
+   
+    <div id="history">
+        <table >
+            
+            <tr>
+                <th>Amount<br></th>
+                <th>Currency</th>
+                <th>Converted to</th>
+                <th>Conversion result</th>
+            </tr>
+            {% for entry in conversion_history %}
+            <tr>
+                <td>
+                {{entry.amount}}
+                </td>
+                <td> 
+                {{entry.from_currency}}
+                </td>
+                <td>
+                {{entry.to_currency}}
+                </td>
+                <td>
+                {{entry.result}}
+                </td>
+                
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>
